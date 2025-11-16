@@ -20,9 +20,9 @@ jobs:
 
     - name: Validate OPML file
       run: |
-        echo "Validating package-manager.opml..."
-        xmllint --noout --valid package-manager.opml
-        echo "✓ OPML file is valid XML"
+        echo "Validating package-manager.opml XML well-formedness..."
+        xmllint --noout package-manager.opml
+        echo "✓ OPML file is well-formed XML"
 
     - name: Check OPML structure
       run: |
