@@ -1,0 +1,54 @@
+name: Validate OPML
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install xmllint
+      run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+
+    - name: Validate OPML file
+      run: |
+        echo "Validating package-manager.opml..."
+        xmllint --noout --valid package-manager.opml
+        echo "✓ OPML file is valid XML"
+
+    - name: Check OPML structure
+      run: |
+        echo "Checking OPML structure..."
+
+        # Check for required elements
+        if ! grep -q "<opml version=" package-manager.opml; then
+          echo "Error: Missing OPML version attribute"
+          exit 1
+        fi
+
+        if ! grep -q "<head>" package-manager.opml; then
+          echo "Error: Missing <head> element"
+          exit 1
+        fi
+
+        if ! grep -q "<body>" package-manager.opml; then
+          echo "Error: Missing <body> element"
+          exit 1
+        fi
+
+        # Count feeds
+        FEED_COUNT=$(grep -c 'type="rss"' package-manager.opml)
+        echo "✓ Found $FEED_COUNT RSS/Atom feeds"
+
+        # Count categories
+        CATEGORY_COUNT=$(grep -c '<outline text="[^"]*">' package-manager.opml | grep -v 'type="rss"' || echo "0")
+
+        echo "✓ OPML structure is valid"
