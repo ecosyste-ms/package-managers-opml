@@ -16,19 +16,20 @@ This OPML feed collection covers:
 
 | Category | Package Managers/Tools |
 |----------|------------------------|
-| JavaScript/Node.js | npm, pnpm, Yarn, Bun, Verdaccio |
-| Python | pip, Poetry, uv, Warehouse (PyPI) |
-| Ruby | RubyGems, Bundler, RubyGems.org |
+| JavaScript/Node.js | npm, pnpm, Yarn, Bun, Deno, JSR, Verdaccio |
+| Python | pip, pipx, Poetry, uv, Hatch, PDM, Warehouse (PyPI) |
+| Ruby | RubyGems, RubyGems.org |
 | Rust | Cargo, Crates.io |
 | PHP | Composer, Packagist |
 | Go | Go modules, Athens |
-| Java/JVM | Maven, Gradle |
-| .NET | NuGet Client, NuGet.Server |
+| Java/JVM | Maven, Gradle, sbt |
+| .NET | NuGet Client, NuGet.Server, NuGetGallery |
+| C/C++ | Conan, vcpkg |
 | Elixir | Hex, Hexpm |
-| System Package Managers | Homebrew, APT, DNF, Pacman, Flatpak, Snap, Nix |
-| Container & Cloud | Docker, Helm, Harbor |
-| Language-Specific | CocoaPods, Swift PM, Pub, CPAN |
-| Multi-Language | Conda, Mamba, Spack, asdf, mise |
+| System Package Managers | Homebrew, MacPorts, APT, DNF, DNF5, Pacman, Flatpak, Snap, Nix, winget, Chocolatey, Scoop |
+| Container & Cloud | Docker, Podman, Helm, Harbor, ORAS |
+| Language-Specific | CocoaPods, Swift PM, Pub, pub.dev, CPAN, Cabal, Stack, opam, Pkg.jl, LuaRocks |
+| Multi-Language | Conda, Mamba, pixi, Spack, asdf, mise |
 | Infrastructure | Renovate, Dependabot |
 
 ## Usage
