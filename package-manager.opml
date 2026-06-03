@@ -84,6 +84,7 @@
       <outline type="rss" text="Homebrew releases" xmlUrl="https://github.com/Homebrew/brew/releases.atom" htmlUrl="https://github.com/Homebrew/brew/releases"/>
       <outline type="rss" text="MacPorts releases" xmlUrl="https://github.com/macports/macports-base/releases.atom" htmlUrl="https://github.com/macports/macports-base/releases"/>
       <outline type="rss" text="Nix releases" xmlUrl="https://github.com/NixOS/nix/releases.atom" htmlUrl="https://github.com/NixOS/nix/releases"/>
+      <outline type="rss" text="NixOS Blog" xmlUrl="https://nixos.org/blog/feed.xml" htmlUrl="https://nixos.org/blog/"/>
       <outline type="rss" text="Pacman releases" xmlUrl="https://gitlab.archlinux.org/pacman/pacman/-/tags?format=atom" htmlUrl="https://gitlab.archlinux.org/pacman/pacman"/>
       <outline type="rss" text="Scoop releases" xmlUrl="https://github.com/ScoopInstaller/Scoop/releases.atom" htmlUrl="https://github.com/ScoopInstaller/Scoop/releases"/>
       <outline type="rss" text="Snapd releases" xmlUrl="https://github.com/canonical/snapd/releases.atom" htmlUrl="https://github.com/canonical/snapd/releases"/>
