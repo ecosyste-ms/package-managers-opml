@@ -23,12 +23,13 @@ This OPML feed collection covers:
 | PHP | Composer, Packagist |
 | Go | Go modules, Athens |
 | Java/JVM | Maven, Gradle, sbt |
-| .NET | NuGet Client, NuGet.Server, NuGetGallery |
+| .NET | NuGet Client, NuGet.Server, NuGetGallery, PSResourceGet |
 | C/C++ | Conan, vcpkg |
 | Elixir | Hex, Hexpm |
 | System Package Managers | Homebrew, MacPorts, APT, DNF, DNF5, Pacman, Flatpak, Snap, Nix, winget, Chocolatey, Scoop |
 | Container & Cloud | Docker, Podman, Helm, Harbor, ORAS |
-| Language-Specific | CocoaPods, Swift PM, Pub, pub.dev, CPAN, Cabal, Stack, opam, Pkg.jl, LuaRocks |
+| Infrastructure as Code | Terraform, OpenTofu |
+| Language-Specific | CocoaPods, Swift PM, Pub, pub.dev, CPAN, Cabal, Stack, opam, Pkg.jl, LuaRocks, Elm |
 | Multi-Language | Conda, Mamba, pixi, Spack, asdf, mise |
 | Infrastructure | Renovate, Dependabot |
 
