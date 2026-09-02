@@ -37,7 +37,7 @@ This OPML feed collection covers:
 
 ### Import into RSS Reader
 
-**Quick Import:** [Download package-manager.opml](https://raw.githubusercontent.com/andrew/package-managers-opml/main/package-manager.opml)
+**Quick Import:** [Download package-manager.opml](https://raw.githubusercontent.com/ecosyste-ms/package-managers-opml/main/package-manager.opml)
 
 #### Popular RSS Readers
 
